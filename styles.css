@@ -1,3 +1,14 @@
 * {
   box-sizing: border-box;
 }
+
+/* Just for visualization purposes. */
+input {
+  margin: 0.25rem;
+}
+
+.input {
+  border: none;
+  outline: none;
+  font-size: inherit;
+}

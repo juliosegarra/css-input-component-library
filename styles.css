@@ -7,8 +7,51 @@ input {
   margin: 0.25rem;
 }
 
+/* Base input */
 .input {
-  border: none;
+  border: 1px solid #aaa;
   outline: none;
   font-size: inherit;
+  padding: 0.5em;
+  border-radius: 0.2em;
+}
+
+.input:focus {
+  border-color: #0af;
+  box-shadow: 0 0 5px 0 #0af;
+}
+
+/* Input success */
+.input.input-success {
+  border-color: #27ae60;
+}
+
+.input.input-success:focus {
+  border-color: #0f0;
+  box-shadow: 0 0 5px 0 #0f0;
+}
+
+/* Input error */
+.input.input-error {
+  border-color: #eb5757;
+}
+
+.input.input-error:focus {
+  border-color: #f00;
+  box-shadow: 0 0 5px 0px #f00;
+}
+
+/* Large input */
+.input.input-large {
+  font-size: 1.25rem;
+}
+
+/* Small input */
+.input.input-small {
+  font-size: 0.75rem;
+}
+
+/* Disabled input so it's same across all browsers */
+.input:disabled {
+  background-color: #eaeaea;
 }

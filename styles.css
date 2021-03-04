@@ -9,7 +9,11 @@ input {
 
 /* Base input */
 .input {
-  border: 1px solid #aaa;
+  /* input custom properties */
+  --border-color: #AAA;
+
+  /* input base declarations */
+  border: 1px solid var(--border-color);
   outline: none;
   font-size: inherit;
   padding: 0.5em;
@@ -17,28 +21,26 @@ input {
 }
 
 .input:focus {
-  border-color: #0af;
-  box-shadow: 0 0 5px 0 #0af;
+  --border-color: #0af;
+  box-shadow: 0 0 5px 0 var(--border-color);
 }
 
 /* Input success */
 .input.input-success {
-  border-color: #27ae60;
+  --border-color: #27ae60;
 }
 
 .input.input-success:focus {
-  border-color: #0f0;
-  box-shadow: 0 0 5px 0 #0f0;
+  --border-color: #0f0;
 }
 
 /* Input error */
 .input.input-error {
-  border-color: #eb5757;
+  --border-color: #eb5757;
 }
 
 .input.input-error:focus {
-  border-color: #f00;
-  box-shadow: 0 0 5px 0px #f00;
+  --border-color: #f00;
 }
 
 /* Large input */
